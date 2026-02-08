@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- 
-    - primary meta tags
-  -->
+    <!-- Primary meta tags -->
     <title>Cicada Web Solutions</title>
     <meta name="title" content="Cicada Web Solutions" />
     <meta
@@ -15,15 +13,77 @@
       content="Cicada Web Solutions is a web designing agency"
     />
 
-    <!-- 
-    - favicon
-  -->
+    <!-- Favicon -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/ico" />
 
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="globals.css" />
+
+    <!-- Preloading -->
+    <link rel="preload" as="image" href="assets/logo-black.png" />
+    <link rel="preload" as="image" href="assets/cicada.jpg" />
+
+    <!-- Icons -->
+    <link rel="preload" as="image" href="icons/c.png" />
+    <link rel="preload" as="image" href="icons/c++.png" />
+    <link rel="preload" as="image" href="icons/css3.png" />
+    <link rel="preload" as="image" href="icons/express.png" />
+    <link rel="preload" as="image" href="icons/facebook.png" />
+    <link rel="preload" as="image" href="icons/figma.png" />
+    <link rel="preload" as="image" href="icons/firebase.png" />
+    <link rel="preload" as="image" href="icons/framer-motion.svg" />
+    <link rel="preload" as="image" href="icons/github.png" />
+    <link rel="preload" as="image" href="icons/gsap.svg" />
+    <link rel="preload" as="image" href="icons/html5.png" />
+    <link rel="preload" as="image" href="icons/instagram.png" />
+    <link rel="preload" as="image" href="icons/java.png" />
+    <link rel="preload" as="image" href="icons/js.png" />
+    <link rel="preload" as="image" href="icons/linkedin.png" />
+    <link rel="preload" as="image" href="icons/mongo.png" />
+    <link rel="preload" as="image" href="icons/n8n.png" />
+    <link rel="preload" as="image" href="icons/nextjs.png" />
+    <link rel="preload" as="image" href="icons/node.png" />
+    <link rel="preload" as="image" href="icons/php.png" />
+    <link rel="preload" as="image" href="icons/python.png" />
+    <link rel="preload" as="image" href="icons/react.png" />
+    <link rel="preload" as="image" href="icons/sql.png" />
+    <link rel="preload" as="image" href="icons/tailwind.png" />
+    <link rel="preload" as="image" href="icons/typescript.png" />
+    <link rel="preload" as="image" href="icons/vue.png" />
+    <link rel="preload" as="image" href="icons/wordpress.png" />
+
+    <!-- Assets -->
+    <link rel="preload" as="image" href="assets/hawk.png" />
+    <link rel="preload" as="image" href="assets/bear.png" />
+    <link rel="preload" as="image" href="assets/bird.png" />
+    <link rel="preload" as="image" href="assets/hawk1.png" />
+    <link rel="preload" as="image" href="assets/owl.png" />
+    <link rel="preload" as="image" href="assets/plane.png" />
+    <link rel="preload" as="image" href="assets/rat.png" />
+    <link rel="preload" as="image" href="assets/anon1.webp" />
+    <link rel="preload" as="image" href="assets/anon2.jpg" />
+    <link rel="preload" as="image" href="assets/anon3.webp" />
+    <link rel="preload" as="image" href="assets/anon4.jpg" />
+    <link rel="preload" as="image" href="assets/vibhakar.jpeg" />
+    <link rel="preload" as="image" href="assets/senthamil.jpeg" />
+    <link rel="preload" as="image" href="assets/sreenathan.jpeg" />
+
     <!-- Styles -->
-    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="styles/preloader.css" />
   </head>
 
-  <body></body>
+  <body>
+    <!-- Loader -->
+    <div id="loader">
+      <div class="loader-content">
+        <img src="assets/cicada.jpg" class="loader-logo" />
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+      </div>
+    </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="scripts/preload.js"></script>
+  </body>
 </html>
