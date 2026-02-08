@@ -1,9 +1,40 @@
+@import url("fonts/Poppins/poppins.css");
+@import url("fonts/Nippo/nippo.css");
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root{
+    --ff-Poppins: "Poppins-Regular";
+    --ff-Nippo: "Nippo-Regular";
+    /* Colours */
+    --black: #000000;
+    --white: #ffffff;
+    --green: #058C42;
+    --blue: #1D56FA;
+    --gold: #FFC857;
+    /* Typography */
+    --small: 16px;
+    --medium: 1.25rem;
+    --large: 1.44rem;
+    --x-large: 2.074rem;
+    --xl-large: 3rem;
+    --xxl-large: 4rem;
+}
+
 body {
     background-color: black;
+    color: ivory;
+    font-family: var(--ff-Poppins);
+}
+
+p {
+    font-size: var(--small);
+}
+
+h1 {
+    font-size: var(--xxl-large);
 }

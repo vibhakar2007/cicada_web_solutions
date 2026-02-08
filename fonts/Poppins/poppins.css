@@ -1,0 +1,104 @@
+/**
+* @license
+*
+* Font Family: Nippo
+* Designed by: Manushi Parikh
+* URL: https://www.fontshare.com/fonts/nippo
+* © 2026 Indian Type Foundry
+*
+* Nippo Extralight 
+* Nippo Light 
+* Nippo Regular 
+* Nippo Medium 
+* Nippo Bold 
+* Nippo Variable (Variable font)
+
+*
+*/
+@font-face {
+  font-family: 'Poppins-Black';
+  src: url('fonts/Poppins-Black.ttf') format('truetype'),
+       url('fonts/Poppins-BlackItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('fonts/Poppins-Bold.ttf') format('truetype'),
+       url('fonts/Poppins-BoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins-ExtraBold';
+  src: url('fonts/Poppins-ExtraBold.ttf') format('truetype'),
+       url('fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins-ExtraLight';
+  src: url('fonts/Poppins-ExtraLight.ttf') format('truetype'),
+       url('fonts/Poppins-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins-Italic';
+  src: url('fonts/Poppins-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url('fonts/Poppins-Light.ttf') format('truetype'),
+       url('fonts/Poppins-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url('fonts/Poppins-Medium.ttf') format('truetype'),
+       url('fonts/Poppins-MediumItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: url('fonts/Poppins-SemiBold.ttf') format('truetype'),
+       url('fonts/Poppins-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins-Thin';
+  src: url('fonts/Poppins-Thin.ttf') format('truetype'),
+       url('fonts/Poppins-ThinItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 700.0;
+*
+* available axes:
+'wght' (range from 200.0 to 700.0
+*/
+
