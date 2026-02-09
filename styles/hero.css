@@ -141,4 +141,8 @@ span {
     .blueGlow {
         right: 0%;
     }
+
+    .heroButtons button {
+        font-size: 1.25rem;
+    } 
 }

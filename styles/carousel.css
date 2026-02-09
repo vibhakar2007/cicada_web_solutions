@@ -41,7 +41,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .carouselIcon img {
@@ -61,7 +61,9 @@
 }
 
 .carouselIcon img {
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .carouselIcon:hover img {
@@ -69,3 +71,13 @@
   opacity: 1;
 }
 
+@media (min-width: 768px) {
+  .carouselIcon {
+    min-width: 56px;
+    height: 56px;
+  }
+
+  .track{
+    gap: 70px;
+  }
+}
