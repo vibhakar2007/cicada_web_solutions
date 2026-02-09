@@ -99,3 +99,7 @@ ul li {
 .listItem:hover {
   color: var(--gold);
 }
+
+section {
+    overflow-x: hidden;
+}

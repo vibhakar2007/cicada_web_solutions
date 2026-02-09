@@ -7,11 +7,11 @@
     flex-direction: column;
     width: 100%;
     height: 60vh;
+    overflow-x: hidden;
 }
 
 .heroCicada {
-    width: 171px;
-    height: 80px;
+    width: 130px;
     opacity: .20;
 }
 
@@ -66,7 +66,7 @@ span {
     height: 120px;
     width: 140px;
     border-radius: 50%;
-    background-color: #06C55C;
+    background-color: #069948;
     position: absolute;
 }
 .greenCircle3 {
@@ -80,8 +80,10 @@ span {
 .greenGlow {
     position: absolute;
     filter: blur(120px);
-    top: 40%;
+    top: 20%;
     left: -20%;
+    height: 200px;
+    width: 200px;
 }
 
 .blueCircle1 {
@@ -98,17 +100,45 @@ span {
     background-color: #0647FF;
     position: absolute;
 }
-.blueCircle2 {
-    height: 170px;
-    width: 150px;
+.blueCircle3 {
+    height: 130px;
+    width: 120px;
     border-radius: 50%;
-    background-color: #007BFF;
+    background-color: #001aff;
     position: absolute;
 }
 
 .blueGlow {
+    height: 200px;
+    width: 200px;
     position: absolute;
     filter: blur(150px);
-    top: 20%;
-    right: -5%;
+    top: 40%;
+    right: 0%;
+}
+
+@media (min-width: 768px) {
+    .heroCicada {
+        width: 171px;
+        height: 80px;
+    }
+
+    .heroText {
+        /* font-size: 150px; */
+        font-size: 9rem;
+        margin-bottom: 0;
+        line-height: 10rem;
+    }
+
+    .heroSubText {
+        font-size: 1rem;
+    }
+
+    .greenGlow {
+        left: 0%;
+    }
+
+    .blueGlow {
+        right: 0%;
+    }
 }
