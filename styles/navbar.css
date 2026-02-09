@@ -2,6 +2,7 @@
 
 .mobTopbar {
   width: 100%;
+  height: 8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,4 +46,35 @@
   transform: translateY(0);
   opacity: 1;
   pointer-events: auto;
+}
+
+.pcTopBar{
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mobTopbar,
+  .overlay,
+  .menu-btn {
+    display: none;
+  }
+
+  .pcTopBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+  }
+
+  .pcNavList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  #pcContactButton {
+    margin-right: 2rem;
+  }
 }
