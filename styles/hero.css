@@ -1,0 +1,114 @@
+@import url("../globals.css");
+
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+}
+
+.heroCicada {
+    width: 171px;
+    height: 80px;
+    opacity: .20;
+}
+
+.heroText {
+    font-family: var(--ff-Nippo-Extralight);
+    font-size: 5rem;
+}
+
+span {
+    color: var(--green);
+}
+
+.heroSubText {
+    font-family: var(--ff-Michroma);
+    color: #A4A4A4;
+    font-size: .7rem;
+}
+
+.textsAndLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+
+.heroButtons {
+    margin-bottom: 2.5rem;
+}
+
+.heroButtons button {
+    margin-left: .3rem;
+    margin-right: .3rem;
+    font-size: 1rem;
+}
+
+.bgGlow {
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.greenCircle1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #06C55C;
+    position: absolute;
+}
+.greenCircle2 {
+    height: 120px;
+    width: 140px;
+    border-radius: 50%;
+    background-color: #06C55C;
+    position: absolute;
+}
+.greenCircle3 {
+    height: 160px;
+    width: 170px;
+    border-radius: 50%;
+    background-color: #109c4f;
+    position: absolute;
+}
+
+.greenGlow {
+    position: absolute;
+    filter: blur(120px);
+    top: 40%;
+    left: -20%;
+}
+
+.blueCircle1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #4000FF;
+    position: absolute;
+}
+.blueCircle2 {
+    height: 120px;
+    width: 140px;
+    border-radius: 50%;
+    background-color: #0647FF;
+    position: absolute;
+}
+.blueCircle2 {
+    height: 170px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #007BFF;
+    position: absolute;
+}
+
+.blueGlow {
+    position: absolute;
+    filter: blur(150px);
+    top: 20%;
+    right: -5%;
+}
