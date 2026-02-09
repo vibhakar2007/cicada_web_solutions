@@ -26,9 +26,11 @@
 }
 
 body {
-    background-color: black;
+    background-color: var(--black);
     color: ivory;
     font-family: var(--ff-Poppins);
+    height: 100vh;
+    width: 100%;
 }
 
 p {
@@ -37,4 +39,41 @@ p {
 
 h1 {
     font-size: var(--xxl-large);
+}
+
+i {
+  font-size: 24px;
+  color: white;
+}
+
+.button {
+  background-color: var(--blue);
+  color: var(--white);
+  font-family: var(--ff-Nippo);
+  display: inline-flex;       
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;         
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.button:hover {
+  background-color: transparent;
+  border: 2px solid var(--blue);
+}
+
+ul li {
+    list-style: none;
+}
+
+.listItem {
+    font-size: 20px;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.listItem:hover {
+    color: var(--gold);
 }

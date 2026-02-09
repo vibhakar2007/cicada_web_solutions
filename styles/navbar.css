@@ -1,0 +1,48 @@
+@import url("../globals.css");
+
+.mobTopbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  padding-right: 2rem;
+}
+
+.overlay {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(-10px);
+  opacity: 0;
+  pointer-events: none;
+
+  transition: all 0.3s ease;
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#contactButton {
+  margin-bottom: 10rem;
+}
+
+.hide {
+  opacity: 0;
+  display: none;
+}
+.overlay.active {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
