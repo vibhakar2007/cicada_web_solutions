@@ -1,0 +1,71 @@
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 48px;
+  position: relative;
+  height: 6rem;
+}
+
+/* Edge fade */
+.carousel::before,
+.carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 140px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.carousel::before {
+  left: 0;
+  background: linear-gradient(to right, black, transparent);
+}
+
+.carousel::after {
+  right: 0;
+  background: linear-gradient(to left, black, transparent);
+}
+
+.track {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: scroll 35s linear infinite;
+}
+
+.carouselIcon {
+  min-width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+}
+
+.carouselIcon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Infinite scroll */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.carouselIcon img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.carouselIcon:hover img {
+  transform: scale(1.15);
+  opacity: 1;
+}
+
