@@ -18,6 +18,7 @@
 .heroText {
     font-family: var(--ff-Nippo-Extralight);
     font-size: 5rem;
+    letter-spacing: -2%;
 }
 
 span {

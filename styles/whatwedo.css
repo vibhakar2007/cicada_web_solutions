@@ -1,0 +1,172 @@
+@import url("../globals.css");
+@import url("animations.css");
+
+#whatwedo {
+  background: #000;
+  color: #fff;
+  padding: 80px 16px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#whatwedo h2 {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 80px;
+  font-family: var(--ff-Nippo);
+}
+
+#whatwedo h2 span {
+  color: var(--green);
+}
+
+/* =====================
+   GRID LAYOUT (ALL SIZES)
+===================== */
+
+.timelineContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 60px 1fr;
+  gap: clamp(16px, 4vw, 40px);
+}
+
+/* LEFT / RIGHT COLUMNS */
+.set1,
+.set3 {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(60px, 10vw, 120px);
+}
+
+/* CENTER COLUMN */
+.set2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* =====================
+   TIMELINE BAR
+===================== */
+
+.timeline-bar {
+  position: relative;
+  width: 2px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* GLOW DOT */
+.progress-dot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background: #00ff88;
+  border-radius: 50%;
+  box-shadow:
+    0 0 12px rgba(0,255,136,0.9),
+    0 0 24px rgba(0,255,136,0.6);
+}
+
+/* =====================
+   ITEMS
+===================== */
+
+.timelineItem {
+  max-width: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.timelineItem img {
+  width: clamp(150px, 20vw, 200px);
+  display: block;
+}
+
+.set1 .timelineItem {
+  text-align: right;
+  margin-left: auto;
+}
+
+.set3 .timelineItem {
+  text-align: left;
+  margin-right: auto;
+}
+
+.timelineItem h3 {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  margin-bottom: 12px;
+  font-family: var(--ff-Nippo);
+  width: 100%;
+}
+
+.timelineItem p {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #bdbdbd;
+}
+
+.bird {
+    margin-top: 2rem;
+}
+
+.plane {
+    margin-top: 5rem;
+}
+
+.hawk1 {
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    #whatwedo h2 {
+        font-size: 64px;
+    }
+
+    .timelineItem p {
+        font-size: 16px;
+    }
+
+    .bird,
+    .bear,
+    .plane,
+    .hawk1 {
+        transform: scale(1.35);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bird {
+        margin-left: 2.5rem;
+    }
+
+    .plane {
+        transform: scale(1.5);
+        margin-left: 2rem;
+    }
+
+    .bear {
+        margin-right: 3rem;
+    }
+
+    .hawk1 {
+        transform: scale(1.25);
+        margin-left: 2rem;
+    }
+
+    .discover {
+        margin-top: 3rem;
+    }
+
+    .execute {
+        margin-top: 1.5rem;
+    }
+}

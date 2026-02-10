@@ -86,7 +86,8 @@
     <link rel="stylesheet" href="styles/preloader.css" />
     <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="stylesheet" href="styles/hero.css" />
-    <link rel="stylesheet" href="styles/carousel.css">
+    <link rel="stylesheet" href="styles/carousel.css" />
+    <link rel="stylesheet" href="styles/whatwedo.css" />
   </head>
 
   <body>
@@ -103,7 +104,11 @@
     <!-- Header -->
     <nav class="navBar">
       <div class="mobTopbar">
-        <img src="assets/logo-transparent.png" class="mobTopLogo" alt="Cicada Logo" />
+        <img
+          src="assets/logo-transparent.png"
+          class="mobTopLogo"
+          alt="Cicada Logo"
+        />
         <div class="icon menu-btn" id="menuBtn">
           <i class="fa-solid fa-bars"></i>
         </div>
@@ -121,7 +126,11 @@
       </div>
 
       <div class="pcTopBar">
-        <img src="assets/logo-transparent.png" class="pcTopLogo" alt="Cicada Logo" />
+        <img
+          src="assets/logo-transparent.png"
+          class="pcTopLogo"
+          alt="Cicada Logo"
+        />
 
         <ul class="pcNavList">
           <li class="listItem"><a href="#"></a>Services</li>
@@ -163,54 +172,214 @@
       <div class="carousel">
         <div class="track">
           <!-- Icon Set -->
-          <div class="carouselIcon"><img class="sliderImg" src="icons/html5.png" alt="HTML5"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/css3.png" alt="CSS3"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/js.png" alt="JavaScript"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/react.png" alt="React"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/vue.png" alt="VueJS"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/nextjs.png" alt="NextJS"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/typescript.png" alt="Typescript"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/tailwind.png" alt="Tailwind CSS"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/express.png" alt="ExpressJS"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/figma.png" alt="Figma"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/framer-motion.svg" alt="Framer Motion"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/gsap.png" alt="GSAP"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/node.png" alt="Node"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/mongo.png" alt="MongoDB"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/firebase.png" alt="Firebase"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/sql.png" alt="SQL"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/c.png" alt="C"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/c++.png" alt="C++"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/java.png" alt="JAVA"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/python.png" alt="Python"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/php.png" alt="PHP"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/n8n.png" alt="N8N"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/wordpress.png" alt="Wordpress"></div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/html5.png" alt="HTML5" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/css3.png" alt="CSS3" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/js.png" alt="JavaScript" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/react.png" alt="React" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/vue.png" alt="VueJS" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/nextjs.png" alt="NextJS" />
+          </div>
+          <div class="carouselIcon">
+            <img
+              class="sliderImg"
+              src="icons/typescript.png"
+              alt="Typescript"
+            />
+          </div>
+          <div class="carouselIcon">
+            <img
+              class="sliderImg"
+              src="icons/tailwind.png"
+              alt="Tailwind CSS"
+            />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/express.png" alt="ExpressJS" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/figma.png" alt="Figma" />
+          </div>
+          <div class="carouselIcon">
+            <img
+              class="sliderImg"
+              src="icons/framer-motion.svg"
+              alt="Framer Motion"
+            />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/gsap.png" alt="GSAP" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/node.png" alt="Node" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/mongo.png" alt="MongoDB" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/firebase.png" alt="Firebase" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/sql.png" alt="SQL" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/c.png" alt="C" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/c++.png" alt="C++" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/java.png" alt="JAVA" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/python.png" alt="Python" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/php.png" alt="PHP" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/n8n.png" alt="N8N" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/wordpress.png" alt="Wordpress" />
+          </div>
 
           <!-- Duplicate Set -->
-          <div class="carouselIcon"><img class="sliderImg" src="icons/html5.png" alt="HTML5"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/css3.png" alt="CSS3"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/js.png" alt="JavaScript"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/react.png" alt="React"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/vue.png" alt="VueJS"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/nextjs.png" alt="NextJS"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/typescript.png" alt="Typescript"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/tailwind.png" alt="Tailwind CSS"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/express.png" alt="ExpressJS"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/figma.png" alt="Figma"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/framer-motion.svg" alt="Framer Motion"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/gsap.png" alt="GSAP"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/node.png" alt="Node"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/mongo.png" alt="MongoDB"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/firebase.png" alt="Firebase"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/sql.png" alt="SQL"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/c.png" alt="C"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/c++.png" alt="C++"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/java.png" alt="JAVA"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/python.png" alt="Python"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/php.png" alt="PHP"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/n8n.png" alt="N8N"></div>
-          <div class="carouselIcon"><img class="sliderImg" src="icons/wordpress.png" alt="Wordpress"></div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/html5.png" alt="HTML5" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/css3.png" alt="CSS3" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/js.png" alt="JavaScript" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/react.png" alt="React" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/vue.png" alt="VueJS" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/nextjs.png" alt="NextJS" />
+          </div>
+          <div class="carouselIcon">
+            <img
+              class="sliderImg"
+              src="icons/typescript.png"
+              alt="Typescript"
+            />
+          </div>
+          <div class="carouselIcon">
+            <img
+              class="sliderImg"
+              src="icons/tailwind.png"
+              alt="Tailwind CSS"
+            />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/express.png" alt="ExpressJS" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/figma.png" alt="Figma" />
+          </div>
+          <div class="carouselIcon">
+            <img
+              class="sliderImg"
+              src="icons/framer-motion.svg"
+              alt="Framer Motion"
+            />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/gsap.png" alt="GSAP" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/node.png" alt="Node" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/mongo.png" alt="MongoDB" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/firebase.png" alt="Firebase" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/sql.png" alt="SQL" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/c.png" alt="C" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/c++.png" alt="C++" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/java.png" alt="JAVA" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/python.png" alt="Python" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/php.png" alt="PHP" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/n8n.png" alt="N8N" />
+          </div>
+          <div class="carouselIcon">
+            <img class="sliderImg" src="icons/wordpress.png" alt="Wordpress" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What we do Section -->
+    <section id="whatwedo">
+      <h2>What <span>we</span> do ?</h2>
+      <div class="timelineContent">
+        <div class="set1">
+          <div class="timelineItem" class="bird">
+            <img src="assets/bird.png" alt="Bird" class="bird">
+          </div>
+          <div class="timelineItem plan">
+            <h3>Plan</h3>
+            <p>Following the initial kick-off meeting, we will outline your project, create milestones, and agree on project priorities. Now we have a strategic plan in place that aligns with your initial vision and makes your goals achievable.</p>
+          </div>
+          <div class="timelineItem" class="bear">
+            <img src="assets/bear.png" alt="Bear" class="bear">
+          </div>
+          <div class="timelineItem deliver">
+            <h3>Deliver</h3>
+            <p>Review and testing takes place, which ensures the quality of your project. We value your reputation and want to make sure it is correct. After this, we present your finished custom project and upon approval, your new website will be launched and promoted.</p>
+          </div>
+        </div>
+        <div class="set2">
+          <div class="timeline-bar">
+            <div class="progress-dot"></div>
+          </div>
+        </div>
+        <div class="set3">
+          <div class="timelineItem discover">
+            <h3>Discover</h3>
+            <p>We start our projects by understanding the scope and requirements. This is accomplished by working closely with you to make sure we are all on the same page.</p>
+          </div>
+          <div class="timelineItem" class="plane">
+            <img src="assets/plane.png" alt="Plane" class="plane">
+          </div>
+          <div class="timelineItem execute">
+            <h3>Execute</h3>
+            <p>The final design takes shape and, at this stage, the idea comes to life representing the visual concepts. Our creative development team reviews and revises the materials until it aligns with your goals.</p>
+          </div>
+          <div class="timelineItem" class="hawk1">
+            <img src="assets/hawk1.png" alt="Hawk" class="hawk1">
+          </div>
         </div>
       </div>
     </section>
@@ -218,5 +387,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="scripts/preload.js"></script>
     <script src="scripts/navMenu.js"></script>
+    <script src="scripts/whatwedo.js"></script>
   </body>
 </html>
