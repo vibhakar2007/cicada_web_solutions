@@ -1,0 +1,26 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  transition: background-color 0.4s ease;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 999px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+  transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+/* Visible state */
+body.scrolling::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body.scrolling::-webkit-scrollbar-thumb {
+  background-color: #00ff88;
+  border-color: transparent;
+}
