@@ -11,7 +11,7 @@
 }
 
 .heroCicada {
-    width: 130px;
+    max-width: 150px;
     opacity: .20;
 }
 
@@ -119,8 +119,7 @@ span {
 
 @media (min-width: 768px) {
     .heroCicada {
-        width: 171px;
-        height: 80px;
+        max-width: 171px;
     }
 
     .heroText {

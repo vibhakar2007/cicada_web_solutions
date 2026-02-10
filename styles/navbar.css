@@ -54,6 +54,10 @@
   display: none;
 }
 
+.mobTopLogo {
+  max-height: 9rem;
+}
+
 @media (min-width: 768px) {
   .mobTopbar,
   .overlay,
@@ -78,5 +82,9 @@
 
   #pcContactButton {
     margin-right: 2rem;
+  }
+
+  .pcTopLogo {
+    max-height: 9rem;
   }
 }
