@@ -47,3 +47,10 @@ No heavy frameworks are used to keep the site fast, maintainable, and transparen
 └── README.md
 
 ```
+
+## Members
+
+- Vibhakar S - Lead Engineer
+- Umeshwar M - UI/UX
+- Senthamilarasu AP - AI Engineer
+- Sreenathan S - Backend Developer
