@@ -29,6 +29,7 @@ span {
     font-family: var(--ff-Michroma);
     color: #A4A4A4;
     font-size: .7rem;
+    margin-bottom: 1rem;
 }
 
 .textsAndLogo {
@@ -132,6 +133,7 @@ span {
 
     .heroSubText {
         font-size: 1rem;
+        margin-bottom: 2rem;
     }
 
     .greenGlow {

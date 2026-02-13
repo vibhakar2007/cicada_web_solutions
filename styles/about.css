@@ -1,0 +1,64 @@
+@import url("../globals.css");
+
+#about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutSection1 h1 {
+    font-family: var(--ff-Nippo);
+    font-size: 2.3rem;
+    margin-top: 2rem;
+}
+
+.aboutSection2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutSection2 img {
+    height: 121px;
+    width: 215px;
+    margin-top: 1.5rem;
+}
+
+.innersection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 3rem;
+}
+
+.innersection p {
+    font-family: var(--ff-Poppins);
+    font-size: 1rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+
+.innersection button {
+    height: 41px;
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .aboutSection2 img {
+        display: none;
+    }
+}
