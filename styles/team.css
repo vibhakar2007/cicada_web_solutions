@@ -9,7 +9,7 @@
 #team h2 {
   font-family: var(--ff-Nippo);
   font-size: 2.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 4rem; /* 4rem = 64px */
 }
 
 #team span {

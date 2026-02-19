@@ -2,8 +2,8 @@
 
 #services {
   width: 100%;
-  height: 100vh;
-  padding: 3rem;
+  min-height: 100svh;
+  padding: 2rem 1.5rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -17,8 +17,7 @@
 }
 
 .serviceWrapper {
-  width: 80%;
-  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,11 +64,13 @@
 
 @media (min-width: 768px) {
   #services {
+    padding: 3rem;
     justify-content: center;
     height: auto;
   }
 
   .serviceWrapper {
+    width: 80%;
     flex-direction: row;
     gap: 8rem;
     height: auto;
