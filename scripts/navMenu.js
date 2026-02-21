@@ -3,6 +3,7 @@ const mobileMenu = document.getElementById("mobileMenu");
 
 menuBtn.addEventListener("click", () => {
   mobileMenu.classList.toggle("active");
+  document.body.classList.toggle("no-scroll");
 
   menuBtn.innerHTML = mobileMenu.classList.contains("active")
     ? '<i class="fa-solid fa-xmark"></i>'
