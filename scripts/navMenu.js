@@ -8,3 +8,4 @@ menuBtn.addEventListener("click", () => {
     ? '<i class="fa-solid fa-xmark"></i>'
     : '<i class="fa-solid fa-bars"></i>';
 });
+
