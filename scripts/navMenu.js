@@ -10,3 +10,13 @@ menuBtn.addEventListener("click", () => {
     : '<i class="fa-solid fa-bars"></i>';
 });
 
+const navLinks = document.querySelectorAll("#mobileMenu a");
+
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+    document.body.classList.remove("no-scroll");
+
+    menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+  });
+});
