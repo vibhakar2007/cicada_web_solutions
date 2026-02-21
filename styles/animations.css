@@ -10,3 +10,31 @@
         scale: 1;
     }
 }
+
+@keyframes glitchOut {
+  0% {
+    opacity: 1;
+    transform: translateX(-50%) skewX(0deg);
+  }
+  30% {
+    transform: translateX(-50%) skewX(20deg);
+  }
+  60% {
+    transform: translateX(-50%) skewX(-20deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+}
+
+@keyframes scanSweep {
+  0% {
+    top: -100%;
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}

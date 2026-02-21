@@ -166,3 +166,24 @@
         margin-top: 1.5rem;
     }
 }
+/* ==========
+  Mobile Responsive part
+   ==========      */
+@media (max-width: 520px) {
+  .timelineContent {
+    grid-template-columns: 1fr 30px 1fr; 
+    gap: 16px; 
+  }
+
+  .timelineItem {
+    max-width: 260px; 
+  }
+
+  .timelineItem img {
+    width: 120px; 
+  }
+
+  .timelineItem p {
+    font-size: 12px;
+  }
+}

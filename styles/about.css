@@ -1,0 +1,104 @@
+/* SECTION */
+#about {
+  width: 100%;
+  padding: 4rem 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HEADING */
+.aboutSection1 h1 {
+  font-family: var(--ff-Nippo);
+  font-size: 2.3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.aboutSection1 span {
+  color: #00c16e; /* your green */
+}
+
+/* MAIN CONTENT */
+.aboutSection2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+/* LEFT SIDE */
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.left img {
+  width: 280px;
+  height: auto;
+}
+
+/* DIVIDER */
+.divider {
+  width: 2px;
+  height: 220px;
+  background-color: rgba(255,255,255,0.2);
+}
+
+/* RIGHT SIDE */
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  align-items: flex-start;   /* ⬅️ THIS FIXES IT */
+}
+
+.right p {
+  font-family: var(--ff-Poppins);
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 500px;
+}
+
+/* ========================= */
+/* 📱 MOBILE RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .aboutSection2 {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .divider {
+    display: none; /* hide vertical line on mobile */
+  }
+
+  .right {
+    align-items: center;
+    text-align: start;
+  }
+
+  .right p {
+    max-width: 85%;
+  }
+
+  .right .button {
+    margin-top: 2rem;
+  }
+
+}
