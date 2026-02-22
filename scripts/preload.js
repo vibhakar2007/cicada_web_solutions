@@ -1,3 +1,4 @@
+
 const assets = document.images;
 let loaded = 0;
 
@@ -23,11 +24,24 @@ function update() {
 }
 
 function finish() {
+  // Add the class to make the rest of the site visible
+  document.body.classList.add('is-loaded');
+
   gsap.to("#loader", {
     yPercent: -100,
     duration: 0.9,
     ease: "power4.inOut",
     delay: 0.2,
-    onComplete: () => loader.remove()
+    onComplete: () => {
+       const loader = document.getElementById('loader');
+       if(loader) loader.remove();
+    }
   });
 }
+
+// Force the page to show after 5 seconds even if images are slow
+setTimeout(() => {
+  if (document.getElementById('loader')) {
+    finish();
+  }
+}, 5000);

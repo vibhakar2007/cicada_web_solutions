@@ -147,3 +147,17 @@ section {
 body.no-scroll {
   overflow: hidden;
 }
+
+/* Hide everything inside the nav and sections initially */
+.navBar, section {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* We will add this class via JS once the loader finishes */
+.is-loaded .navBar, 
+.is-loaded section {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease;
+}
