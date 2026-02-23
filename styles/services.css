@@ -64,9 +64,9 @@
 
 @media (min-width: 768px) {
   #services {
-    padding: 3rem;
+    padding: 1rem;
     justify-content: center;
-    height: auto;
+    min-height: auto;
   }
 
   .serviceWrapper {
