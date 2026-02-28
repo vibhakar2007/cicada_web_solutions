@@ -50,6 +50,10 @@
   font-family: var(--ff-Nippo);
 }
 
+.basic button {
+  margin-top: 1.8rem;
+}
+
 .basic h3 { color: #3b82f6; }
 .premium h3 { color: #facc15; }
 
@@ -89,17 +93,6 @@
 /* BUTTON */
 .pricing-card button {
   width: 100%;
-  padding: 10px;
-  background: #1d4ed8;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: 0.3s;
-}
-
-.pricing-card button:hover {
-  background: #2563eb;
 }
 
 /* DIVIDER */
@@ -131,11 +124,13 @@
 .terminal-left {
   bottom: -40px;
   left: 0;
+  margin: -2rem;
 }
 
 .terminal-right {
   top: -40px;
   right: 0;
+  margin: -2rem;
 }
 
 .pink { color: #ff4dd2; }

@@ -1,0 +1,100 @@
+@import url("../globals.css");
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+    height: max-content;
+}
+
+.contact-section h1 {
+    font-family: var(--ff-Nippo);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact-section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #3f3f3f;
+    border-radius: 5px;
+    height: max-content;
+    gap: 1rem;
+}
+
+.contact-section form textarea,
+.contact-section input {
+    width: 100%;
+}
+
+.contact-section form textarea {
+    min-height: 150px;
+    height: max-content;
+    overflow-y: auto;
+    resize: none;
+}
+
+.contact-section .row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: .7rem;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+    background-color: var(--black);
+    border-radius: 5px;
+    border: none;
+    padding: 12px 15px;
+    color: ivory;
+}
+
+.contact-section form input {
+    min-height: 40px;
+}
+
+.contact-section form input::placeholder,
+.contact-section form textarea::placeholder {
+    font-family: var(--ff-Nippo);
+}
+
+.contact-section button {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 40px;
+    width: max-content;
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .contact-section form {
+        max-width: 660px;
+        max-height: 420px;
+    }
+
+    .contact-section form input,
+    .contact-section form textarea {
+        height: 50px;
+    }
+
+    .contact-section form textarea {
+        max-height: 350px;
+    }
+
+    .contact-section button {
+        font-size: 20px;
+        padding: 1rem;
+        margin-top: 3rem;
+    }
+}
