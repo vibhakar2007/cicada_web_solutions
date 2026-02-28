@@ -174,7 +174,7 @@
         <button class="button" id="initializeProject">
           Initialize Project
         </button>
-        <button class="buttonInverse">Explore System</button>
+        <button class="buttonInverse" id="exploreSystem">Explore System</button>
       </div>
 
       <div class="carousel">
@@ -630,7 +630,10 @@
         <textarea name="message" placeholder="Message..." required></textarea>
       </form>
 
-      <button type="submit" form="contactForm" class="button">Transmit Message</button>
+      <button type="submit" form="contactForm" class="button" id="submitBtn">
+        <span class="btn-text">Transmit Message</span>
+        <span class="spinner"></span>
+      </button>
       <p id="status"></p>
     </section>
 
@@ -647,5 +650,7 @@
         emailjs.init("NjH0ICfstdRfz9bTC");
       })();
     </script>
+
+    <div id="toast"></div>
   </body>
 </html>

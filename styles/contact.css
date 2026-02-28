@@ -77,6 +77,64 @@
     font-size: 16px;
 }
 
+#submitBtn {
+  position: relative;
+  cursor: pointer;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid transparent;
+  border-top: 3px solid white;
+  border-radius: 50%;
+  display: none;
+  animation: spin 0.8s linear infinite;
+  margin-left: 10px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+#submitBtn.loading .spinner {
+  display: inline-block;
+}
+
+#submitBtn.loading .btn-text {
+  opacity: 0.7;
+}
+
+button span {
+    color: ivory;
+}
+
+#toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  color: white;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.3s ease;
+  font-size: 14px;
+}
+
+#toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#toast.success {
+  background: #1f8f4e;
+}
+
+#toast.error {
+  background: #c0392b;
+}
+
 @media (min-width: 768px) {
     .contact-section form {
         max-width: 660px;
