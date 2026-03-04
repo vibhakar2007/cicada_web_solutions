@@ -83,19 +83,18 @@
     ></script>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/preloader.css" />
-    <link rel="stylesheet" href="styles/scrollbar.css" />
-    <link rel="stylesheet" href="styles/navbar.css" />
-    <link rel="stylesheet" href="styles/hero.css" />
-    <link rel="stylesheet" href="styles/carousel.css" />
-    <link rel="stylesheet" href="styles/whatwedo.css" />
-    <link rel="stylesheet" href="styles/services.css" />
-    <link rel="stylesheet" href="styles/about.css" />
-    <link rel="stylesheet" href="styles/team.css" />
-    <link rel="stylesheet" href="styles/pricing.css" />
-    <link rel="stylesheet" href="styles/contact.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
-
+    <link
+      rel="preload"
+      href="styles/style.min.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript>
+      <link rel="stylesheet" href="styles/style.css" />
+    </noscript>
   </head>
 
   <body>
@@ -654,38 +653,42 @@
     </script>
 
     <div id="toast"></div>
-  <footer class="footer">
-    <div class="footer-container">
-
-    <!-- Left Section -->
-      <div class="footer-left">
-        <img src="assets\cicada.jpg" alt="Cicada Logo" class="footer-logo">
-        <h2 class="footer-brand">CICADA<span>.</span></h2>
-      </div>
-
-    <!-- Center Section -->
-      <div class="footer-center">
-        <div class="social-icons">
-          <a href="#" id="linkedin"><img src="icons/linkedin.png" alt="LinkedIn"></a>
-          <a href="#" id="github"><img src="icons/github.png" alt="GitHub"></a>
-          <a href="#" id="insta"><img src="icons/instagram.png" alt="Instagram"></a>
-          <a href="#" id="facebook"><img src="icons/facebook.png" alt="Facebook"></a>
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left Section -->
+        <div class="footer-left">
+          <img src="assets\cicada.jpg" alt="Cicada Logo" class="footer-logo" />
+          <h2 class="footer-brand">CICADA<span>.</span></h2>
         </div>
 
-        <p class="copyright">
-          Cicada © All rights reserved
-        </p>
-      </div>
+        <!-- Center Section -->
+        <div class="footer-center">
+          <div class="social-icons">
+            <a href="#" id="linkedin"
+              ><img src="icons/linkedin.png" alt="LinkedIn"
+            /></a>
+            <a href="#" id="github"
+              ><img src="icons/github.png" alt="GitHub"
+            /></a>
+            <a href="#" id="insta"
+              ><img src="icons/instagram.png" alt="Instagram"
+            /></a>
+            <a href="#" id="facebook"
+              ><img src="icons/facebook.png" alt="Facebook"
+            /></a>
+          </div>
 
-    <!-- Right Section -->
-      <div class="footer-right">
-       <p>+91-89460-59859</p>
-        <p>+91-87786-88185</p>
-        <p>cicadawebsolutions@gmail.com</p>
-      </div>
+          <p class="copyright">Cicada © All rights reserved</p>
+        </div>
 
-    </div>
-   </footer>
-   <script src="scripts/footer.js"></script>
+        <!-- Right Section -->
+        <div class="footer-right">
+          <p>+91-89460-59859</p>
+          <p>+91-87786-88185</p>
+          <p>cicadawebsolutions@gmail.com</p>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/footer.js"></script>
   </body>
 </html>
