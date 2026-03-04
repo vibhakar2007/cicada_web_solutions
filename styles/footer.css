@@ -1,3 +1,5 @@
+@import url("../globals.css");
+
 .footer {
   background-color: #000;
   color: #aaa;
@@ -31,7 +33,7 @@
 }
 
 .footer-brand span {
-  color: #00ff88; /* green dot */
+  color: var(--green); /* green dot */
 }
 
 /* Center */
@@ -39,18 +41,8 @@
   text-align: center;
 }
 
-.transmit-btn {
-  background: #1e3a8a;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  margin-bottom: 20px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.transmit-btn:hover {
-  background: #2563eb;
+.footer-left {
+  font-family: var(--ff-Nippo);
 }
 
 .social-icons {
