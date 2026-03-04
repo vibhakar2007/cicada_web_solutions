@@ -95,6 +95,9 @@
     <noscript>
       <link rel="stylesheet" href="styles/style.css" />
     </noscript>
+
+    <!-- Script -->
+    <script src="scripts/script.min.js" defer></script>
   </head>
 
   <body>
@@ -638,20 +641,6 @@
       <p id="status"></p>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="scripts/preload.js"></script>
-    <script src="scripts/scrollbar.js"></script>
-    <script src="scripts/navMenu.js"></script>
-    <script src="scripts/whatwedo.js"></script>
-    <script src="scripts/buttons.js"></script>
-    <script src="scripts/contact.js"></script>
-    <script>
-      (function () {
-        emailjs.init("NjH0ICfstdRfz9bTC");
-      })();
-    </script>
-
     <div id="toast"></div>
     <footer class="footer">
       <div class="footer-container">
@@ -689,6 +678,13 @@
         </div>
       </div>
     </footer>
-    <script src="scripts/footer.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("NjH0ICfstdRfz9bTC");
+      })();
+    </script>
   </body>
 </html>
