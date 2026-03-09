@@ -2,7 +2,12 @@
 contactButton = document.getElementById("contactButton");
 pcContactButton = document.getElementById("pcContactButton");
 initializeProject = document.getElementById("initializeProject");
+initializeProject2 = document.getElementById("initializeProject2");
+initializeProject3 = document.getElementById("initializeProject3");
 exploreSystem = document.getElementById("exploreSystem");
+wwu1 = document.getElementById("wwu1")
+wwu2 = document.getElementById("wwu2")
+wwu3 = document.getElementById("wwu3")
 
 contactButton.addEventListener("click", () => {
     window.location.href = "https://wa.me/+918778688185";
@@ -13,6 +18,26 @@ pcContactButton.addEventListener("click", () => {
 })
 
 initializeProject.addEventListener("click", () => {
+    window.location.href = "https://wa.me/+918778688185";
+})
+
+initializeProject2.addEventListener("click", () => {
+    window.location.href = "https://wa.me/+918778688185";
+})
+
+initializeProject3.addEventListener("click", () => {
+    window.location.href = "https://wa.me/+918778688185";
+})
+
+wwu1.addEventListener("click", () => {
+    window.location.href = "https://wa.me/+918778688185";
+})
+
+wwu2.addEventListener("click", () => {
+    window.location.href = "https://wa.me/+918778688185";
+})
+
+wwu3.addEventListener("click", () => {
     window.location.href = "https://wa.me/+918778688185";
 })
 
